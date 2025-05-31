@@ -7,7 +7,8 @@ Kurdish is an Indo-European language spoken by the Kurdish people in the Middle 
 Our focus will be on the Sorani dialect, which is spoken in parts of Iraq and Iran. Sorani is known for its rich literary tradition and is one of the two official languages of Iraq.
 Sorani Kurdish is characterized by its use of the Arabic script, which has been adapted to accommodate Kurdish phonetics.
 Also, Sorani has many sub-dialects, for example, the Erbil and Sulaymaniyah dialects, which can differ in pronunciation and vocabulary. For example, the word for "why" is "لۆ" (Lo) in Erbil and "بۆ" (Bo) in Sulaymaniyah.
-We will be learning the Hawleri (Erbil) dialect, with the mention of standard equivalents where necessary.
+We will be learning the Hawleri dialect, with the mention of standard equivalents where necessary.
+We won't be using latin script in this guide and will use romanized Kurdish instead.
 
 ## Basic Phrases
 ### Greetings
@@ -24,29 +25,31 @@ The following are some very rarely used greetings, but they are still good to kn
 
 ### Common Phrases
 English: **How are you?** <br>
-Kurdish (Erbil): Choni? (چۆنی؟) <br>
-Kurdish (Erbil, Alternative): Kuy? (کوی؟) <br>
+Kurdish: Choni? (چۆنی؟) <br>
+Kurdish (Alternative): Kuy? (کوی؟) <br>
 
 English: **I am fine, thank you.** <br>
-Kurdish (Erbil): Bashim, Alhamdulillah. (باشم، ٱلْحَمْدُ لِلَّٰهِ) <br>
-Kurdish (Erbil, Alternative): Bashim, supas. (باشم، سوپاس) <br>
+Kurdish: Bashim, Alhamdulillah. (باشم، ٱلْحَمْدُ لِلَّٰهِ) <br>
+Kurdish (Alternative): Bashim, supas. (باشم، سوپاس) <br>
 
 English: **What is your name?** <br>
-Kurdish (Erbil): Nawt chya? (ناوت چیه؟) <br>
+Kurdish: Nawt chya? (ناوت چیه؟) <br>
 
-English: **My name is ...** <br>
-Kurdish (Erbil): Nawm ... a. (ناوم ... ه) <br>
-**Note:** In Kurdish, the name is usually followed by "a" (ه) to indicate possession, similar to "my" in English. For example, if your name is John, you would say "Nawm John a." (ناوم جۆن ه)
+English: **My name is Azad** <br>
+Kurdish: Nawm Azad a. (ناوم ‌‌ئازاده) <br>
+**Note:** In Kurdish, the name is usually followed by "a" (ه) to indicate possession, similar to "my" in English. For example, if your name is Azad, you would say "Nawm Azad a." (ناوم ئازاده).
+However, if the name ends with A, like Sara, you would add an e before the "a", like this: "Nawm Sara ya." (ناوم سارا یە).
+Also, usually just saying your name is enough if someone asks for your name, so you can just say "Azad" (ئازاد).
 
 English: **Where are you from?** <br>
-Kurdish (Erbil): xerki kendari? (خەرکی کێندەری؟) <br>
-Kurdish (Erbil, Alternative): xerki key? (خەرکی کێی؟) <br>
+Kurdish: xerki kendari? (خەرکی کێندەری؟) <br>
+Kurdish (Alternative): xerki key? (خەرکی کێی؟) <br>
 Kurdish (Standard): xelki kwey? (خەڵکی کوێی؟) <br>
 
 English: **I am from ...** <br>
-Kurdish (Erbil): xerki ... m. (خەرکی ... ه) <br>
+Kurdish: xerki ... m. (خەرکی ... ه) <br>
 **Note:** Similar to the name, the place is followed by "m" (م) to indicate possession, similar to "my" in English. For example, if you are from Erbil, you would say "xerki Hawler m." (خەرکی هەولێر م).
 
 English: **Nice to meet you.** <br>
-Kurdish (Erbil): khosh halim. (خۆش حاڵم) <br>
-Kurdish (Erbil, Alternative): pe khosh halim. (پێ خۆش حاڵم) <br>
+Kurdish: khosh halim. (خۆش حاڵم) <br>
+Kurdish (Alternative): pe khosh halim. (پێ خۆش حاڵم) <br>
