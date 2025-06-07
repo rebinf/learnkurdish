@@ -1,4 +1,4 @@
-# This workflow will build a .NET project
+# This workflow will build and deploy a Blazor WebAssembly app to GitHub Pages
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
 permissions:
@@ -6,7 +6,7 @@ permissions:
   pages: write
   id-token: write
 
-name: .NET
+name: Deploy Blazor to GitHub Pages
 
 on:
   push:
@@ -14,28 +14,40 @@ on:
 
 jobs:
   build:
-
+    runs-on: ubuntu-latest
+    
     environment:
       name: github-pages
-      url: ${{ steps.deploy-to-pages.outputs.page_url }}
-
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
+        
     - name: Restore dependencies
       run: dotnet restore
-    - name: Publish
+      
+    - name: Publish Blazor WebAssembly
       run: dotnet publish -c Release -o ./publish
-    - name: Disable Jekyll
+      
+    - name: Add .nojekyll file
       run: touch ./publish/wwwroot/.nojekyll
+      
+    - name: Change base-tag in index.html
+      run: sed -i 's/<base href="\\/" \\/>/<base href="\\/learnkurdish\\/" \\/>/g' ./publish/wwwroot/index.html
+      
+    - name: Copy index.html to 404.html
+      run: cp ./publish/wwwroot/index.html ./publish/wwwroot/404.html
+      
     - name: Upload artifacts
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./publish
+        path: ./publish/wwwroot
+        
     - name: Deploy to GitHub Pages
+      id: deployment
       uses: actions/deploy-pages@v4
