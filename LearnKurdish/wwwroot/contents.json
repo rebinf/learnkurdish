@@ -48,12 +48,27 @@
       "Description": "Here are some common phrases that will help you in everyday conversations:",
       "IsSubSection": true,
       "Table": {
-        "Headers": [ "English", "Kurdish (Latin)", "Kurdish (Arabic)" ],
+        "Headers": [ "English", "Kurdish (Latin)", "Kurdish (Arabic)", "Notes" ],
         "Rows": [
-          [ "How are you?", "Çonî?", "چۆنی؟" ],
-          [ "How are you?", "Kuy", "کوی؟" ],
-          [ "I'm fine, praise be to God", "başim, Alhamdulillah", "باشم، الحمد لله" ],
-          [ "I'm fine, thank you", "başim, supas", "باشم، سوپاس" ]
+          [ "How are you?", "Çonî?", "چۆنی؟", "" ],
+          [ "How are you?", "Kuy", "کوی؟", "" ],
+          [ "I'm fine, praise be to God", "başim, Alhamdulillah", "باشم، الحمد لله", "" ],
+          [ "I'm fine, thank you", "başim, supas", "باشم، سوپاس", "" ],
+          [ "What's your name?", "Nawit çiye?", "ناوت چییە؟", "" ],
+          [ "My name is Azad", "Nawim Azad e", "ناوم ئازادە", "In Kurdish, the name is usually followed by \"e\" (ه). For example, if your name is Azad, you would say \"Nawm Azad e.\" (ناوم ئازاده). However, if the name ends with A, like Sara, you would add an e before the \"e\", like this: \"Nawm Sara ye.\" (ناوم سارا یە). Also, usually just saying your name is enough if someone asks for your name, so you can just say \"Azad\" (ئازاد).\"" ],
+          [ "Where are you from?", "Xerkî kêderî?", "خەریکی کێندری؟", "" ],
+          [ "Where are you from?", "Xerkî kêy?", "خەرکی کێی؟", "" ],
+          [ "I'm from Erbil", "Xerkî Hewlêr im", "خەرکی هەولێرم", "Similar to the name, the place is followed by \"m\" (م). For example, if you are from Erbil, you would say \"xerki Hawler m.\" (خەرکی هەولێرم)." ],
+          [ "Where do you live?", "Le kê dejî?", "لە کێ دەژی؟", "" ],
+          [ "I live in Erbil", "Le Hewlêr dejîm", "لە هەولێر دەژیم", "Similar to the previous example, the place is followed by \"m\" (م) to indicate possession, similar to \"my\" in English. For example, if you live in Erbil, you would say \"Le Hewlêr dejîm.\" (لە هەولێر دەژیم).\"" ],
+          [ "What do you do?", "Çi dekey?", "چ دەکەی؟", "" ],
+          [ "What do you do? (job)", "Çi îş dekey?", "چی ئیش دەکەی؟", "" ],
+          [ "I am a student", "dexînim", "دەخینم", "" ],
+          [ "I work at ... company", "Le kompanîay ... îş dekem", "لە کۆمپانیای ... ئیش دەکەم", "You can replace \"...\" with the name of the company you work for. For example, if you work at a company called \"Tech\", you would say \"Le kompanîay Tech îş dekem\" (لە کۆمپانیای تێک ئیش دەکەم)." ],
+          [ "Nice to meet you", "Xoş halim", "خۆش حاڵم", "" ],
+          [ "Nice to meet you", "Pê xoş halim", "پێ خۆش حاڵم", "" ],
+          [ "Welcome", "Bexêr bêy", "بەخێر بێی", "This is a common phrase used to welcome someone. You can use it when greeting someone for the first time or when they arrive at your home." ],
+          [ "Goodbye", "Xwa hafîz", "خوا حافیز", "This is a common phrase used to say goodbye. You can use it when leaving someone." ]
         ]
       }
     }
