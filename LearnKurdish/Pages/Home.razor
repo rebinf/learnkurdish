@@ -1,7 +1,99 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@inject HttpClient Http
 
-<h1>Hello, world!</h1>
+<PageTitle>Learn Kurdish</PageTitle>
 
-Welcome to your new app.
+@if (ContentsModel != null)
+{
+    <div id="sidebar">
+        <div id="menu-btn" onclick="ToggleNav()">
+            <i class="bi bi-list bi-lg py-2 p-1"></i>
+        </div>
+        <div class="list-group border-0 rounded-0 text-sm-start min-vh-100">
+            @foreach (var s in ContentsModel.Sections)
+            {
+                <a href="#@GetSectionId(s.Name)" class="list-group-item border-start-0 border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar">
+                    <span class="@(s.IsSubSection ? "ms-3" : "")">
+                        @s.Name
+                    </span>
+                </a>
+            }
+        </div>
+    </div>
+
+    <div id="main">
+        @foreach (var s in ContentsModel.Sections)
+        {
+            <div class="mt-5">
+                <h2 id="@GetSectionId(s.Name)" class="text-center">@s.Name</h2>
+                @if (!string.IsNullOrWhiteSpace(s.Description))
+                {
+                    <p>
+                        @s.Description
+                    </p>
+                }
+
+                @if (s.Table != null)
+                {
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                @foreach (var header in s.Table.Headers)
+                                {
+                                    <th>@header</th>
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                // Group rows by the first cell value
+                                var groupedRows = s.Table.Rows
+                                .Select((row, idx) => new { Row = row, Index = idx })
+                                .GroupBy(x => x.Row.FirstOrDefault())
+                                .ToList();
+
+                                var renderedRowIndices = new HashSet<int>();
+                            }
+                            @foreach (var group in groupedRows)
+                            {
+                                int rowspan = group.Count();
+                                bool first = true;
+                                foreach (var item in group)
+                                {
+                                    <tr>
+                                        @if (first)
+                                        {
+                                            <td class="align-middle" rowspan="@rowspan">@item.Row[0]</td>
+                                        }
+                                        @for (int i = 1; i < item.Row.Count(); i++)
+                                        {
+                                            <td class="align-middle">@item.Row[i]</td>
+                                        }
+                                    </tr>
+                                    first = false;
+                                }
+                            }
+                        </tbody>
+                    </table>
+                }
+
+            </div>
+        }
+    </div>
+}
+
+@code
+{
+    private ContentsModel ContentsModel;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ContentsModel = await Http.GetFromJsonAsync<ContentsModel>("contents.json");
+    }
+
+    private string GetSectionId(string sectionName)
+    {
+        return sectionName.ToLowerInvariant().Replace(" ", "-").Replace("'", "");
+    }
+}

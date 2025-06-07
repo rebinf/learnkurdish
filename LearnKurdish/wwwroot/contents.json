@@ -1,0 +1,61 @@
+﻿{
+  "Sections": [
+    {
+      "Name": "Kurdish Language",
+      "Description": "Kurdish is an Indo-European language spoken by the Kurdish people in the Middle East. It has several dialects, with Kurmanji and Sorani being the most widely spoken. Kurdish is primarily written in the Latin script in Turkey and Syria, while Sorani uses a modified Arabic script in Iraq and Iran."
+    },
+    {
+      "Name": "Introduction",
+      "Description": "The goal of this guide is to provide a basic understanding of the Kurdish language, focusing on the Sorani dialect. This guide will cover essential phrases, greetings, and basic grammar rules to help you start communicating in Kurdish. Keep in mind this is not a comprehensive guide, and its main focus will be on conversing. We won't be using latin script in this guide and will use romanized Kurdish instead."
+    },
+    {
+      "Name": "Dialect Focus",
+      "Description": "Our focus will be on the Sorani dialect, which is spoken in parts of Iraq and Iran. Sorani is known for its rich literary tradition and is one of the two official languages of Iraq. Sorani Kurdish is characterized by its use of the Arabic script, which has been adapted to accommodate Kurdish phonetics. Also, Sorani has many sub-dialects, for example, the Erbil and Sulaymaniyah dialects, which can differ in pronunciation and vocabulary. For example, the word for \"why\" is \"لۆ\" (Lo) in Erbil and \"بۆ\" (Bo) in Sulaymaniyah. We will be learning the Hawleri dialect, with the mention of standard equivalents where necessary. In Sorani dialect male and female do not have different pronouns."
+    },
+    {
+      "Name": "Tenses",
+      "Table": {
+        "Headers": [ "Tense", "English", "Kurdish (Latin)", "Kurdish (Arabic)" ],
+        "Rows": [
+          [ "Un-conjugated", "to eat", "xwardin", "خواردن" ],
+          [ "Present/Future", "I eat/I will eat", "dexom", "دەخۆم" ],
+          [ "Simple Past", "I ate", "xwardim", "خواردم" ],
+          [ "Past Continuous", "I was eating", "demxward", "دەمخۆرد" ],
+          [ "Present Perfect", "I have eaten", "xwardim", "خواردم" ],
+          [ "Past Perfect", "I had eaten", "xwardibûm", "خواردبووم" ]
+        ]
+      }
+    },
+    {
+      "Name": "Phrases",
+      "Description": "Since majority of Kurdish speakers are Muslims, greetings often include religious phrases. Main one is \"سلام علیکم\" (Salaam Alaikum), which means \"Peace be upon you.\" The response is \"وعلیکم السلام\" (Wa Alaikum Salaam), meaning \"And upon you be peace.\" However, there are also a more formal greeting \"سڵاو\" (Slaw), which means \"Hello\" The response is also \"سڵاو\" (Slaw), however, that is really something you would say when greeting someone online or in a text message. If you meet someone in person, you would use \"سلام علیکم\" (Salaam Alaikum) instead."
+    },
+    {
+      "Name": "Other Greetings",
+      "Description": "The following are some very rarely used greetings, but they are still good to know:",
+      "IsSubSection": true,
+      "Table": {
+        "Headers": [ "English", "Kurdish (Latin)", "Kurdish (Arabic)" ],
+        "Rows": [
+          [ "Hello", "Slaw", "سڵاو" ],
+          [ "Good morning", "Beyanî baş", "بەیانی باش" ],
+          [ "Good night", "Şaw şad", "شەو شاد" ]
+        ]
+      }
+    },
+    {
+      "Name": "Common Phrases",
+      "Description": "Here are some common phrases that will help you in everyday conversations:",
+      "IsSubSection": true,
+      "Table": {
+        "Headers": [ "English", "Kurdish (Latin)", "Kurdish (Arabic)" ],
+        "Rows": [
+          [ "How are you?", "Çonî?", "چۆنی؟" ],
+          [ "How are you?", "Kuy", "کوی؟" ],
+          [ "I'm fine, praise be to God", "başim, Alhamdulillah", "باشم، الحمد لله" ],
+          [ "I'm fine, thank you", "başim, supas", "باشم، سوپاس" ]
+        ]
+      }
+    }
+  ]
+}
