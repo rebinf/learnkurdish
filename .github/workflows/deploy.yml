@@ -31,6 +31,8 @@ jobs:
       run: dotnet restore
     - name: Publish
       run: dotnet publish -c Release -o ./publish
+    - name: Disable Jekyll
+      run: touch ./publish/wwwroot/.nojekyll
     - name: Upload artifacts
       uses: actions/upload-pages-artifact@v3
       with:
