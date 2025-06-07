@@ -36,7 +36,7 @@ jobs:
 
     - name: Replace base href
       shell: pwsh
-      run: (Get-Content ./publish/wwwroot/index.html) -replace '<base href="/">', '<base href="/learnkurdish/">' | Set-Content ./publish/wwwroot/index.html
+      run: (Get-Content ./publish/wwwroot/index.html).Replace('<base href="/"', '<base href="/learnkurdish/"') | Set-Content ./publish/wwwroot/index.html
       
     - name: Add .nojekyll file
       run: touch ./publish/wwwroot/.nojekyll
