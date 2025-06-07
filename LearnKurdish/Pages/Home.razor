@@ -1,6 +1,7 @@
 ﻿@page "/"
 
 @inject HttpClient Http
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Learn Kurdish</PageTitle>
 
@@ -86,6 +87,12 @@
 @code
 {
     private ContentsModel ContentsModel;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JSRuntime.InvokeVoidAsync("StripeTables");
+        await base.OnAfterRenderAsync(firstRender);
+    }
 
     protected override async Task OnInitializedAsync()
     {
