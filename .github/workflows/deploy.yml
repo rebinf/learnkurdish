@@ -32,7 +32,7 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o ./publish
     - name: Upload artifacts
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3
       with:
         path: ./publish
     - name: Deploy to GitHub Pages
