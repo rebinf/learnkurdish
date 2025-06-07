@@ -31,5 +31,9 @@ jobs:
       run: dotnet restore
     - name: Publish
       run: dotnet publish -c Release -o ./publish
+    - name: Upload artifacts
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./publish
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
